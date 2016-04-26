@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Falling Leaves v0.4.2 -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='css/style.css'/>
+
+        <!--AngularJS-->
+        <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
+
+        <!-- JavaScript App -->
+        <script src='fallingleavesApp.js'></script>
+
+        <title>Falling Leaves</title>
+    </head>
+
+
+    <body>
+        <div id="container" ng-app="fallingleavesApp" ng-controller="fallingleavesController as flCtrl">
+
+            <!--
+            <div id="menuButton" ng-click="flCtrl.menuConfig.visible = !flCtrl.menuConfig.visible">
+                Menu
+            </div>
+            -->
+
+
+
+            <ng-include src="'views/menu.html'" onload="flCtrl = flCtrl"></ng-include>
+
+            <header id="header">
+                <div>
+                    <a class="headerButton" ng-href="http://fallingleavesgame.com/">
+                        Falling Leaves
+                    </a>
+                </div>
+                <div>
+                    <a class="headerButton" ng-href="http://fallingleavesgame.com/about"">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a class="headerButton" ng-href="http://patreon.com/fallingleavesgame">
+                        Patreon
+                    </a>
+                </div>
+            </header>
+            <div id="body">
+                <div id="title0010">
+                    Falling Leaves ALPHA
+                </div>
+
+                <div class="wordbox" ng-if="flCtrl.player.name == null">
+                    What is your name?
+                </div>
+
+               <div id="usernameForm0010" ng-if="!flCtrl.player.name">
+                    <form id="usernameForm" ng-submit="flCtrl.submitUsernameForm(flCtrl.tempName)">
+                        <input id="username" ng-model="flCtrl.tempName" type="text">
+                        <input id="submit" type="submit" name="submit" class="button">
+                    </form>
+                </div>
+                <ng-include ng-if="flCtrl.player.name !== null" src="'/views/storyGenerator.html'" onload="flCtrl = flCtrl">
+                </ng-include>
+            </div>
+
+            <div id="footer">
+                Copyright 2016 Baird Bros Game Studios
+            </div>
+
+        </div>
+
+     </body>
+</html>
+
+
+<!--  <head>
+
+
+    <body>
+
+    </body>-->

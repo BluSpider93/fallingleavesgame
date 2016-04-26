@@ -1,0 +1,82 @@
+<div id="menu" ng-if="flCtrl.menuConfig.visible">
+    <div class="button" id="statsButton" ng-click="flCtrl.menuConfig.statsVisible = !flCtrl.menuConfig.statsVisible">
+        Stats
+    </div>
+    <div class="button" id="equipmentButton" ng-click="flCtrl.menuConfig.equipmentVisible = !flCtrl.menuConfig.equipmentVisible">
+        Equipment
+    </div>
+    <div class="button" id="inventoryButton" ng-click="flCtrl.menuConfig.inventoryVisible = !flCtrl.menuConfig.inventoryVisible">
+        Inventory
+    </div>
+    <div class="inventoryBag" id="currency">
+        <label></label>
+        <div ng-repeat="currency in flCtrl.playerInventory.currency">
+            ${{ currency.amount }}
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="playerStats" ng-show="flCtrl.menuConfig.statsVisible">
+        <div ng-repeat="stat in flCtrl.player.stats">
+            {{stat.name}}: {{stat.value}}
+        </div>
+    </div>
+    <div id="playerEquipment" ng-if="flCtrl.menuConfig.equipmentVisible">
+        <div>
+            Weapon: {{flCtrl.playerEquipment.weapon.name}}<br>
+            Armor: {{flCtrl.playerEquipment.armor.name}}<br>
+            Accessory: {{flCtrl.playerEquipment.accessory.name}}<br>
+        </div>
+    </div>
+    <div id="playerInventory" ng-show="flCtrl.menuConfig.inventoryVisible">
+        <div class="button" id="weaponsButton" ng-click="flCtrl.menuConfig.weaponsVisible = !flCtrl.menuConfig.weaponsVisible">
+            Weapons
+        </div>
+        <div class="inventoryBag" id="weapons" ng-if="flCtrl.menuConfig.weaponsVisible">
+            <div>
+                            <span ng-repeat="weapon in flCtrl.playerInventory.weapons">
+                                <div class="item" ng-click="weapon.equipped">
+                                    Name: {{weapon.name}}<br>
+                                    Damage: {{weapon.damage}}<br>
+                                    Value: ${{weapon.value}}<br>
+                                    Description: {{weapon.description}}<br>
+                                </div>
+                                <br>
+                            </span>
+            </div>
+        </div>
+        <br>
+        <div class="button" id="armorButton" ng-click="flCtrl.menuConfig.armorVisible = !flCtrl.menuConfig.armorVisible">
+            Armor
+        </div>
+        <div class="inventoryBag" id="armor" ng-if="flCtrl.menuConfig.armorVisible">
+                            <span ng-repeat="armor in flCtrl.playerInventory.armor">
+                            <div class="item" ng-click="armor.equipped">
+                                Name: {{armor.name}}<br>
+                                Rating: {{armor.rating}}<br>
+                                Value: ${{armor.value}}<br>
+                                Description: {{armor.description}}<br>
+                            </div>
+                            <br>
+                        </span><br>
+        </div>
+        <br>
+        <div class="button" id="accessoriesButton" ng-click="flCtrl.menuConfig.accessoriesVisible = !flCtrl.menuConfig.accessoriesVisible">
+            Accessories
+        </div>
+
+        <div class="inventoryBag" id="accessories" ng-if="flCtrl.menuConfig.accessoriesVisible">
+                            <span ng-repeat="accessory in flCtrl.playerInventory.accessories">
+                                <div class="item" ng-click="accessory.equipped = true">
+                                    Name: {{accessory.name}}<br>
+                                    Effect: {{accessory.effect}}<br>
+                                    Value: ${{accessory.value}}<br>
+                                    Description: {{accessory.description}}<br>
+                                    Equipped: {{accessory.equipped}} <br>
+                                </div>
+                                <br>
+                            </span>
+            <div class="items"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>

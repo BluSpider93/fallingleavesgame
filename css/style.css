@@ -1,0 +1,377 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#container {
+    min-height:100%;
+    position:relative;
+}
+
+.navButtons,
+.choiceButton {
+    height: 20px;
+}
+
+#container {
+    height:100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    background-color: #333333;
+    height: 35px;
+    width: 100%;
+    position:fixed;
+    top:0px;
+    margin:auto;
+    z-index:100000;
+    margin-bottom: 0px;
+}
+
+#header,
+#header div {
+    color: white;
+
+    background-color: #333333;
+    padding:10px;
+}
+
+#header div {
+    float: left;
+    margin-left: 15px;
+    border: 1px solid white;
+}
+
+#header div:hover {
+    background-color: #555555;
+    cursor: pointer;
+}
+
+#body {
+    padding:10px;
+    padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px;   /* Height of the footer */
+    background: #333333;
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    background-color: #333333;
+    background-image: url("../img/alphaBackground.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 91.5%
+}
+
+form {
+    color: #5fddad;
+}
+
+label {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+
+#title0010 {
+    font-size: 2em;
+    color: #000000;
+    text-shadow: 4px 3px 2px #9bbddd;
+    margin: 75px 0px 50px;
+}
+
+.wordbox,
+#wordbox,
+#wordbox0010,
+#menu,
+#playerStats,
+#playerInventory,
+#playerEquipment,
+.inventoryBag {
+    background-color: #333333;
+    color: white;
+    opacity: 0.725;
+    border-radius: 60px;
+    text-shadow: none;
+    border: none;
+    padding: 15px;
+}
+
+.wordbox,
+#wordbox,
+#wordbox0010 {
+    display: inline-block;
+    width: auto;
+    margin: 10px 300px;
+    text-align: center;
+}
+
+#wordbox0010 {
+    width: 40%;
+    line-height: 140%;
+}
+
+#currency, 
+.inventoryBag {
+    border: 2px solid white;
+    border-radius: 0;
+    text-align: center;
+}
+
+.inventoryBag {
+    width: 500px;
+    margin: 8px;
+}
+.item {
+    width: 250px;
+}
+
+#currency {
+    display: block;
+    float: right;
+    width: 50px;
+}
+
+#menuButton {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.navButtons,
+.choiceButton,
+.nextButton,
+.backButton{
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    width: auto;
+    margin: 10px;
+}
+
+.button,
+#menuButton,
+#statsButton,
+#equipmentButton,
+#inventoryButton,
+#weaponsButton,
+#armorButton,
+#accessoriesButton {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    background-color: #333333;
+    border: 2px solid white;
+    width: auto;
+    margin: 10px;
+}
+
+#weaponsButton, 
+#armorButton, 
+#accessoriesButton {
+    display: block;
+    text-align: center;
+}
+
+#inventoryButton, 
+#equipmentButton,
+#weaponsButton, 
+#armorButton, 
+#accessoriesButton {
+    width: 75px;
+}
+
+#statsButton,
+#inventoryButton,
+#equipmentButton {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#menu {
+    z-index: 100;
+    position: absolute;
+    border-radius: 0px;
+    border: 5px solid white;
+    opacity: 1;
+    top: 50px;
+    left: calc(50% - 300px);
+    width: 600px;
+    text-align: left;
+}
+
+#playerStats,
+#playerInventory,
+#playerEquipment{
+    border-radius: 0px;
+    border: 1px solid white;
+    opacity: 0.999;
+}
+.item {
+    border: 1px solid gray;
+    padding: 3px;
+    transition: all .2s ease-in-out;
+}
+.item:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.clearfix {
+    clear: both;
+}
+
+input[type=text] {
+    display: inline;
+    background-color: #333333;
+    color: white;
+    font-size: 18px;
+    width: 175px;
+    height: 30px;
+    margin: 8px;
+    border: none;
+    opacity: 0.725;
+}
+
+.headerButton:focus,
+input[type=text]:focus
+ {
+    display: inline-block;
+    color: White;
+    border: 3px solid #555;
+    opacity: 0.725;
+
+}
+.sidebar {
+    position: absolute;
+    float: left;
+    width: 20%;
+    background-color: #333333;
+    color: white;
+    margin-top: 0;
+    margin-left: 20px;
+    padding: 15px 25px 15px 30px;
+}
+
+.choiceButton {
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    background-color: #333333;
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+.buttonSetting {
+    display: inline-block;
+    margin: 10px;
+}
+
+.choiceButton:focus,
+.choiceButton:hover,
+.navButton:focus,
+.navButton:hover {
+    display: inline-block;
+    opacity: 0.725;
+}
+
+input[type=submit],
+#submit, 
+#submit:hover {
+    display: inline-block;
+    color: white;
+    background: #333333;
+    border: 5px solid #333333;
+}
+
+input[type=submit], 
+input[type=submit]:hover,
+input[type=submit]:focus, 
+#submit, #submit:focus, 
+#submit:hover,
+.headerButton,
+.button:hover,
+.choiceButton:hover,
+.navButton:hover {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:active,
+input[type=submit]:active:focus,
+input[type=submit]:focus,
+input[type=submit]:hover {
+    display: inline-block;
+    border: none;
+    outline: 0;
+}
+
+.navButton:hover,
+.choiceButton:hover,
+#submit:focus,
+#submit:hover {
+    opacity: 0.4;
+    border-color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+    #title {
+        font-size: 4em;
+    }
+    input[type=text] {
+        margin: 16px;
+        padding: 12px;
+        height: 50px;
+        width: 400px;
+        font-size: 24px;
+        color: White;
+        border: 2px solid white;
+    }
+    
+    input[type=text]:focus {
+        color: White;
+        border: none;
+        background-color: #333333;
+        
+        
+    }
+}@media screen and (max-width: 481px) {
+    #header,
+    #body,
+    #footer {
+        float: left;
+        padding: 0;
+        width: 94%;
+        margin: 3%;
+    }
+    #footer {
+        display: none;
+    }
+    #wordbox0010 {
+        width: 100%;
+    }
+}

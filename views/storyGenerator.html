@@ -1,0 +1,26 @@
+<br>
+<div id="wordbox0010" ng-bind="flCtrl.renderStoryText(flCtrl.story.lines[flCtrl.story.currentIndex].text)">
+    {{flCtrl.renderStoryText(flCtrl.story.lines[flCtrl.story.currentIndex].text)}}
+</div>
+<br>
+<br>
+<div class="clearfix"></div>
+<div ng-if="flCtrl.story.lines[flCtrl.story.currentIndex].options">
+    <div class="buttonSetting" ng-repeat="option in flCtrl.story.lines[flCtrl.story.currentIndex].options">
+        <div class="choiceButton"ng-click="flCtrl.story = flCtrl.main[option.value]">
+            {{option.text}}
+        </div>
+    </div>
+</div>
+<div class="navButtons">
+    <div ng-if="flCtrl.story.currentIndex != 0" class="navButtons">
+        <button class="button" id="backButton" ng-click="flCtrl.story.currentIndex = flCtrl.story.currentIndex - 1">Back</button>
+    </div>
+    <div  ng-if="!flCtrl.story.lines[flCtrl.story.currentIndex].options" class="navButtons">
+        <button class="button" id="nextButton" ng-click="flCtrl.story.currentIndex = flCtrl.story.currentIndex + 1;">Next</button>
+    </div>
+</div>
+<br>
+<div class="navButtons" ng-if="flCtrl.story == flCtrl.main.intro && !flCtrl.story.lines[flCtrl.story.currentIndex].options">
+    <button class="button" id="introSkip" ng-click="flCtrl.story = flCtrl.main.i01">Skip Intro</button>
+</div>
