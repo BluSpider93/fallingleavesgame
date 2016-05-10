@@ -1,7 +1,7 @@
 var app = angular.module("fallingleavesApp", []);
 
 app.controller('fallingleavesController', [
-    function() {
+    function () {
 
         var _self = this;
 
@@ -25,7 +25,7 @@ app.controller('fallingleavesController', [
                 {
                     text: "My name is Dustin Baird, I'm the Primary developer on this project, as well as the owner of " +
                     "Baird Bros Game Studios. I would like to thank Gabriel Doty for his guidance and critiques throughout" +
-                    " development. I'd also like to thank Lauren Hawkings (AKA Riot-Hawk) and Cody Badders for letting me" +
+                    " development. I'd also like to thank Lauren Hawkins (AKA Riot-Hawk) and Cody Badders for letting me" +
                     " bounce ideas off of them."
                 },
                 {
@@ -66,14 +66,12 @@ app.controller('fallingleavesController', [
                 armor: {},
                 accessory: {}
             },
-            setPlayerName: function(username){
+            setPlayerName: function (username) {
                 _self.player.name = username
             }
         };
 
-        _self.playerEquipment = {
-
-        };
+        _self.playerEquipment = {};
 
         _self.playerInventory = {
             weapons: [],
@@ -103,11 +101,11 @@ app.controller('fallingleavesController', [
                     name: 'Dollars',
                     amount: 20
                 }
-             ]
+            ]
         };
 
 
-        _self.submitUsernameForm = function(username) {
+        _self.submitUsernameForm = function (username) {
             _self.player.setPlayerName(username)
         };
 
@@ -116,12 +114,12 @@ app.controller('fallingleavesController', [
 
             test: {
                 currentIndex: 0,
-                lines:[
+                lines: [
                     {
                         text: "This is a lot of words in an attempt to quickly and easily assess what the game will look" +
-                            "like when there is a lot of text on the screen. So yeah. This is more words. More words" +
-                            "go here. Even more words. Wow, that's a lot of words! The quick brown fox jumped over the " +
-                            "lazy dog."
+                        "like when there is a lot of text on the screen. So yeah. This is more words. More words" +
+                        "go here. Even more words. Wow, that's a lot of words! The quick brown fox jumped over the " +
+                        "lazy dog."
                     },
                     {
                         text: "Short sentence."
@@ -153,8 +151,8 @@ app.controller('fallingleavesController', [
             /* Intro */
 
             intro: {
-               currentIndex: 0,
-                lines:[
+                currentIndex: 0,
+                lines: [
                     {
                         text: "The world of Trii'el is not unlike Earth."
                     },
@@ -162,16 +160,16 @@ app.controller('fallingleavesController', [
                         text: "The people live their lives mostly focused on themselves or their loved ones"
                     },
                     {
-                        text: "In the year 4024, they have cars, smart phones, skyscrapers and trains that circle" +
-                            " the country."
+                        text: "In the Trii'ic year 4024, they have cars, smart phones, skyscrapers and trains that circle" +
+                        " the country."
                     },
                     {
                         text: "They have religion, of course. Churches to their gods can be found in all the cities in " +
-                            "Un'taeko, the province you live in."
+                        "Un'taeko, the province you live in."
                     },
                     {
                         text: "These churches tell you about the father god, Intus, and his misadventures during the" +
-                            " early creation."
+                        " early creation."
                     },
                     {
                         text: "They also tell you about Lecia, the goddess who followed him into your universe."
@@ -187,15 +185,15 @@ app.controller('fallingleavesController', [
                     },
                     {
                         text: "Implying Intus laid with Bellaeda, a human who was married to the King of Bae'el 4000 " +
-                            "years ago."
+                        "years ago."
                     },
                     {
                         text: "But that's none of my business."
                     },
                     {
                         text: 'Anyway, the real story, including Onle, begins before any of the real creation, when ' +
-                            'Lecia showed up to Trii' +"'el" + 'and was all "You need to come back!" and ' +
-                            'Intus was all "Nah, that' + "'s cool. But let me show you my creation!" + '"'
+                        'Lecia showed up to Trii' + "'el" + 'and was all "You need to come back!" and ' +
+                        'Intus was all "Nah, that' + "'s cool. But let me show you my creation!" + '"'
                     },
                     {
                         text: 'So Intus showed Lecia the rock he made. Well, that and the sun and stars and moons and shit.'
@@ -231,8 +229,8 @@ app.controller('fallingleavesController', [
                         text: 'Well, your ancient ancestors, anyway.'
                     },
                     {
-                        text: 'Later on, their children married Onle' +"'" + 's escorts, and had children of their own' +
-                            ' and made their own creations...'
+                        text: 'Later on, their children married Onle' + "'" + 's escorts, and had children of their own' +
+                        ' and made their own creations...'
                     },
                     {
                         text: '...that is... except for one of the children...'
@@ -500,12 +498,12 @@ app.controller('fallingleavesController', [
                         text: 'You see a missed call from Clara. When you check your messages you realize you had been' +
                         'messaging back and forth for a few hours. You groan to yourself when you read some of the cheesy' +
                         'messages you sent her. You can' + "'" + 't believe she actually kept messaging you after that.'
-                    },{
+                    }, {
                         text: 'You put your phone down and shuffle into the kitchen. You grab a pill from the medicine' +
                         'cabinet and a glass of water. As you swallow the pill you flip on the TV.'
-                    },{
+                    }, {
                         text: 'Your phone starts ringing as you see something on the TV about some corporate takeover.'
-                    },{
+                    }, {
                         text: 'You glance at the phone screen and see that it' + "'s Clara calling.",
                         options: [
                             {
@@ -523,14 +521,14 @@ app.controller('fallingleavesController', [
                 lines: [
                     {
                         text: '"Hello?"'
-                    },{
+                    }, {
                         text: 'CLARA: "{{PLAYERNAME}}? Hey! It' + "s Clara. You still remember me, right?"
-                    },{
+                    }, {
                         text: 'YOU: "Yeah... I' + "'m sorry, just still waking up... but yeah, I remember." + '"'
                     }, {
                         text: 'You definitely remember. Gods, she was beautiful... you think... she was beautiful, right?' +
                         'Man, you can' + "'t remember what her face looks like now. How drunk were you?"
-                    },{
+                    }, {
                         text: 'CLARA: "So... I was wondering if you wanted to maybe grab some lunch?"',
                         options: [
                             {
@@ -549,21 +547,21 @@ app.controller('fallingleavesController', [
                 lines: [
                     {
                         text: 'YOU: "Yeah! How about at 12:30?" You really need to find out if she was actually beautiful.'
-                    },{
+                    }, {
                         text: 'CLARA: "That sounds perfect. I' + "'ll meet you at the Soreen Coffee Co. on 5th. " +
                         'See you later!"'
-                    },{
+                    }, {
                         text: "You hang up the phone and notice something on the breakfast bar."
-                    },{
+                    }, {
                         text: "It's a purple... rock? Crystal, you guess. How did that get there?"
-                    },{
+                    }, {
                         text: 'You try not to think about it too hard. You throw some clothes on while you' +
                         ' run out the door.'
-                    },{
+                    }, {
                         text: 'As you walk down the sidewalk, you swear you see a puddle of blood in the street out' +
                         ' of the corner of your eye. You do a double take, but the street looks clean the second time ' +
                         'around. You tell yourself you need to cut back on the alcohol and keep walking.'
-                    },{
+                    }, {
                         text: 'To be continued.',
                         options: [
                             {
@@ -788,55 +786,49 @@ app.controller('fallingleavesController', [
         };
 
 
-
-
-        _self.renderStoryText = function(story) {
+        _self.renderStoryText = function (story) {
             var newStory = story.replace('{{PLAYERNAME}}', _self.player.name);
             return newStory;
         };
-
 
 
         /*_self.story = _self.main.test; */
         _self.story = _self.main.intro;
 
 
-
-
-
         /*
 
-        Strength
-            A measure of how physically strong a character is. Strength controls the
-            maximum weight the character can carry, melee damage. Some weapons also have a
-            Strength requirement.
+         Strength
+         A measure of how physically strong a character is. Strength controls the
+         maximum weight the character can carry, melee damage. Some weapons also have a
+         Strength requirement.
 
-        Vitality
-            A measure of how sturdy a character is. Vitality also influences hit points,
-            resistances for special types of damage (poisons, illness, heat etc.) and fatigue.
+         Vitality
+         A measure of how sturdy a character is. Vitality also influences hit points,
+         resistances for special types of damage (poisons, illness, heat etc.) and fatigue.
 
-        Agility
-            A measure of how agile a character is. Agility controls attack, movement speed
-            and accuracy, as well as evading an opponent's attack.
+         Agility
+         A measure of how agile a character is. Agility controls attack, movement speed
+         and accuracy, as well as evading an opponent's attack.
 
-        Intellect
-            A measure of a character's problem-solving ability. Intellect controls your
-            character's ability to comprehend foreign languages and their skill in magic.
+         Intellect
+         A measure of a character's problem-solving ability. Intellect controls your
+         character's ability to comprehend foreign languages and their skill in magic.
 
-        Charm
-            A measure of a character's social skills, and sometimes their physical appearance.
-            Charisma generally influences prices while trading, and NPC reactions.
+         Charm
+         A measure of a character's social skills, and sometimes their physical appearance.
+         Charisma generally influences prices while trading, and NPC reactions.
 
-        Wisdom
-            A measure of a character's common sense and/or spirituality. Wisdom controls your
-            character's ability to cast certain spells, communicate to mystical entities, and
-            discern other characters' motives or feelings.
+         Wisdom
+         A measure of a character's common sense and/or spirituality. Wisdom controls your
+         character's ability to cast certain spells, communicate to mystical entities, and
+         discern other characters' motives or feelings.
 
-        Luck
-            A measure of a character's luck. Luck might influence anything, but mostly random
-            items, encounters and critical hits.
+         Luck
+         A measure of a character's luck. Luck might influence anything, but mostly random
+         items, encounters and critical hits.
 
-        */
+         */
 
     }
 ]);

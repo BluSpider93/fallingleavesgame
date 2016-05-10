@@ -240,9 +240,7 @@ label {
     color: black;
     border: 1px solid black;
 }
-.clearfix {
-    clear: both;
-}
+
 
 input[type=text] {
     display: inline;
