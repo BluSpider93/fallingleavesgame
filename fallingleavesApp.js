@@ -5,6 +5,8 @@ app.controller('fallingleavesController', [
 
         var _self = this;
 
+        _self.background = "../img/alphaBackground.jpeg";
+
         _self.menuConfig = {
             visible: false,
             statsVisible: false,
@@ -19,7 +21,7 @@ app.controller('fallingleavesController', [
             lines: [
                 {
                     text: 'Falling Leaves is a game I started to get some experience coding. The game is driven by choices' +
-                    '. Each choice you make takes you further and further from the "trunk" of the story, so you could end' +
+                    '. Each choice you make "branches" you further and further from the "trunk" of the story, so you could end' +
                     ' up anywhere in the in game world, just as a leaf falling from a tree could.'
                 },
                 {
@@ -62,8 +64,14 @@ app.controller('fallingleavesController', [
                 }
             ],
             equipment: {
-                weapon: {},
-                armor: {},
+                weapon: {
+                    name: 'None',
+                    damage: '1',
+                    description: "You're unarmed, idiot."
+                },
+                armor: {
+
+                },
                 accessory: {}
             },
             setPlayerName: function (username) {
@@ -104,11 +112,21 @@ app.controller('fallingleavesController', [
             ]
         };
 
+        _self.backImg = function(url) {
+
+        };
+
 
         _self.submitUsernameForm = function (username) {
             _self.player.setPlayerName(username)
         };
 
+        _self.changeBranch = function(option) {
+            _self.story = option;
+            if (option.background) {
+                _self.background = option.background;
+            }
+        };
 
         _self.main = {
 
@@ -131,7 +149,7 @@ app.controller('fallingleavesController', [
                             {
                                 value: "ab01100",
                                 text: 'ab01100',
-                                sentiment: 2
+                                sentiment: 2,
                             },
                             {
                                 value: "ab011000",
@@ -311,6 +329,7 @@ app.controller('fallingleavesController', [
             /* Cadillac Lounge */
 
             ab0: {
+                background: "/img/CadillacLounge.jpg",
                 currentIndex: 0,
                 lines: [
                     {

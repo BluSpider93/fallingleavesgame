@@ -23,7 +23,7 @@
 
     <body>
         <div id="container" ng-app="fallingleavesApp" ng-controller="fallingleavesController as flCtrl">
-
+            <div id="background" ng-style="{'background-image' : 'url(' + flCtrl.background + ')'}"></div>
             <!--
             <div id="menuButton" ng-click="flCtrl.menuConfig.visible = !flCtrl.menuConfig.visible">
                 Menu
