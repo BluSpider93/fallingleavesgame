@@ -202,8 +202,8 @@ app.controller('fallingleavesController', [
                         text: "Ironic, considering the heads of the church claim to be direct descendants of Intus himself."
                     },
                     {
-                        text: "Implying Intus laid with Bellaeda, a human who was married to the King of Bae'el 4000 " +
-                        "years ago."
+                        text: "Implying Intus laid with Bellaeda, a human who was married to the anicent King of what is now Bae'el,"
+                        + " the eastern region of Trii'el 4000 years ago."
                     },
                     {
                         text: "But that's none of my business."
@@ -232,10 +232,12 @@ app.controller('fallingleavesController', [
                         text: 'Yeah, Onle and Intus are totally brothers.'
                     },
                     {
-                        text: 'Right, so Onle was checking out '
+                        text: "Right, so Onle admired Intus' handiwork, but he wanted his wife back. He started"
+                        + " arguing with Intus about taking his wife."
                     },
                     {
-                        text: 'They flexed their muscles a little, and Lecia prepared to leave.'
+                        text: 'They flexed their muscles a little, and Lecia got really nervous and started '
+                        + 'preparing to leave.'
                     },
                     {
                         text: 'but before she left, she left a gift.'
@@ -247,8 +249,11 @@ app.controller('fallingleavesController', [
                         text: 'Well, your ancient ancestors, anyway.'
                     },
                     {
+                        text: "Onle told his escorts to stay and watch over his wife's children"
+                    },
+                    {
                         text: 'Later on, their children married Onle' + "'" + 's escorts, and had children of their own' +
-                        ' and made their own creations...'
+                        ' and they made their own creations...'
                     },
                     {
                         text: '...that is... except for one of the children...'
@@ -358,7 +363,7 @@ app.controller('fallingleavesController', [
                             {
                                 value: 'ab03',
                                 text: "Booth",
-                                sentiment: 1
+                                sentiment: 0
                             }
                         ]
                     }
