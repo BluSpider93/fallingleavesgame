@@ -14,7 +14,7 @@ app.module('fallingleavesCreatures', [function () {
         {
             name: 'Clara'
         }
-    ]
+    ];
 
     _self.enemies = [
         {
@@ -42,7 +42,7 @@ app.module('fallingleavesCreatures', [function () {
             lck: 1
         },
         {
-            name: 'Something'
+            name: 'Something',
             health: 1,
             mana: 1,
             str: 1,

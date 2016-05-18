@@ -664,13 +664,10 @@ app.controller('fallingleavesController', [
                         text: 'ANGEL: "{{PLAYERNAME}}, please…"'
                     },
                     {
-                        text: "You don’t even notice that she knew your name at first."
-                    },
-                    {
                         text: "She’s so beautiful…"
                     },
                     {
-                        text: "You can’t help but notice her curves, " +
+                        text: "You can’t help but notice her cleavage, " +
                         "and you almost forget she’s dying in your arms as your eyes wander."
                     },
                     {
@@ -726,7 +723,7 @@ app.controller('fallingleavesController', [
                         text: "...power of my choosing…?"
                     },
                     {
-                        text: "That's so..."
+                        text: "That's... so..."
                     },
                     {
                         text: 'Cliche...'
@@ -749,6 +746,87 @@ app.controller('fallingleavesController', [
                                 sentiment: 0
                             }
 
+                        ]
+                    }
+                ]
+            },
+
+            /*Post Angel Death*/
+
+            PAD01: {
+                currentIndex: 0,
+                lines: [
+                    {
+                        text: "Ok."
+                    },
+                    {
+                        text: "Everything is fine."
+                    },
+                    {
+                        text: "Well, this dead... angel? You guess?"
+                    },
+                    {
+                        text: "She's not fine."
+                    },
+                    {
+                        text: "She's kinda dead."
+                    },
+                    {
+                        text: "Very... dead."
+                    },
+                    {
+                        text: "You know she's actually an angel now."
+                    },
+                    {
+                        text: "You flipped her over and saw that her wings are in fact wings."
+                    },
+                    {
+                        text: "Like, attached and everything."
+                    },
+                    {
+                        text: "By bone and muscle and skin."
+                    },
+                    {
+                        text: "You always thought angels would be more... ethereal."
+                    },
+                    {
+                        text: "But she has flesh and bone..."
+                    },
+                    {
+                        text: "It makes sense though."
+                    },
+                    {
+                        text: "The church always preached that angels were actually descendants of ancient elves and dwarves"
+                    },
+                    {
+                        text: "They are loved by the goddesses and act as messengers between them."
+                    },
+                    {
+                        text: "You look at the stone she gave you again."
+                    },
+                    {
+                        text: "It's purple, and more of a crystal than a rock, really."
+                    },
+                    {
+                        text: "It's got a strange glow."
+                    },
+                    {
+                        text: "You shove it in your pocket and head up to your room."
+                    },
+                    {
+                        text: "You realize you should probably call the police, but when you turn around..."
+                    },
+                    {
+                        text: "She's gone."
+                    },
+                    {
+                        text: 'To be continued.',
+                        options: [
+                            {
+                                value: 'intro',
+                                text: 'END',
+                                sentiment: 0
+                            }
                         ]
                     }
                 ]
