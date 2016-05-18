@@ -735,14 +735,11 @@ app.controller('fallingleavesController', [
                         text: "The angel lies dead in front of you."
                     },
                     {
-                        text: "...shit."
-                    },
-                    {
-                        text: "To be Continued...",
+                        text: "...shit.",
                         options: [
                             {
-                                value: 'intro',
-                                text: "END",
+                                value: 'PAD01',
+                                text: "Ok.",
                                 sentiment: 0
                             }
 
