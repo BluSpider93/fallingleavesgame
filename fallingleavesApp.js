@@ -876,7 +876,7 @@ app.controller('fallingleavesController', [
                         + "there. He might know more. You just need to get to Behaal City."
                     },
                     {
-                        text: "That's about 2 hours North of here on the train. Better get some stuff together and get going."
+                        text: "That's about 2 hours North of here on the train. Better get some stuff together and get going.",
                         options: [
                             {
                                 value: 'intro',
