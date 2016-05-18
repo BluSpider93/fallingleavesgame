@@ -817,10 +817,66 @@ app.controller('fallingleavesController', [
                         text: "You realize you should probably call the police, but when you turn around..."
                     },
                     {
-                        text: "She's gone."
+                        text: "She's gone.",
+                        options: [
+                            {
+                                value: 'PAD02',
+                                text: 'Go to bed.',
+                                sentiment: 0
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            /*PAD 02*/
+
+            PAD02: {
+                currentIndex: 0,
+                lines: [
+                    {
+                        text: "You wake up with a hangover from hell."
                     },
                     {
-                        text: 'To be continued.',
+                        text: "You look at your nightstand and see the contents of your pockets haphazardly "
+                        + "strewn across it."
+                    },
+                    {
+                        text: "You see the crystal the angel gave you last night."
+                    },
+                    {
+                        text: "Shit... that actually happened?"
+                    },
+                    {
+                        text: "You were really hoping it was just a dream."
+                    },
+                    {
+                        text: "You remember what she said though"
+                    },
+                    {
+                        text: "About powers of your choosing."
+                    },
+                    {
+                        text: "What does that even mean? Like, can you fly, or...?"
+                    },
+                    {
+                        text: "You roll out of bed and half-heartedly hop a little bit and see if you can hover or something."
+                    },
+                    {
+                        text: "You land on two feet."
+                    },
+                    {
+                        text: "Nope."
+                    },
+                    {
+                        text: "What other kind of power could she be talking about?"
+                    },
+                    {
+                        text: "Maybe you should go to the chapel she was talking about and speak with the chaplain"
+                        + "there. He might know more. You just need to get to Behaal City."
+                    },
+                    {
+                        text: "That's about 2 hours North of here on the train. Better get some stuff together and get going."
                         options: [
                             {
                                 value: 'intro',
