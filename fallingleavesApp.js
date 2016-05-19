@@ -877,7 +877,7 @@ app.controller('fallingleavesController', [
                         options: [
                             {
                                 value: 'intro',
-                                text: 'END',
+                                text: 'To be Continued...',
                                 sentiment: 0
                             }
                         ]
