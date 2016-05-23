@@ -366,7 +366,7 @@ input[type=submit]:hover {
         
         
     }
-}@media screen and (max-width: 481px) {
+}@media only screen and (max-width: 481px) {
     #header,
     #body,
     #footer {
@@ -375,10 +375,16 @@ input[type=submit]:hover {
         width: 94%;
         margin: 3%;
     }
+    #header {
+        height: 10%;
+    }
     #footer {
         display: none;
     }
     #wordbox0010 {
+        font-size: large;
         width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 }
