@@ -2,9 +2,11 @@ html,
 body {
     margin:0;
     padding:0;
-    height:100%;
 }
 
+body {
+    height: 100%;
+}
 #container {
     min-height:100%;
     position:relative;
@@ -367,6 +369,11 @@ input[type=submit]:hover {
     }
 
     #wordbox0010 {
+        width: 80%;
         font-size: large;
+    }
+
+    #footer {
+        display: none;
     }
 }
