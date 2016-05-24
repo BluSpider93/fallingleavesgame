@@ -869,7 +869,7 @@ app.controller('fallingleavesController', [
                         text: "What other kind of power could she be talking about?"
                     },
                     {
-                        text: "Maybe you should go to the chapel she was talking about and speak with the chaplain"
+                        text: "Maybe you should go to the chapel she was talking about and speak with the chaplain "
                         + "there. He might know more. You just need to get to Behaal City."
                     },
                     {
