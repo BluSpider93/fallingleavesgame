@@ -38,9 +38,8 @@ a {
 #header,
 #header div {
     color: white;
-
+    padding: 10px;
     background-color: #333333;
-    padding:10px;
 }
 
 #header div {
@@ -52,11 +51,6 @@ a {
 #header div:hover {
     background-color: #555555;
     cursor: pointer;
-}
-
-#body {
-    padding:10px;
-    padding-bottom:60px;   /* Height of the footer */
 }
 
 #footer {
@@ -131,9 +125,8 @@ label {
 #wordbox,
 #wordbox0010 {
     display: inline-block;
-    width: auto;
-    margin: 10px 300px;
     text-align: center;
+    margin-top: 10px;
 }
 
 #wordbox0010 {
@@ -366,25 +359,14 @@ input[type=submit]:hover {
         
         
     }
-}@media only screen and (max-width: 481px) {
-    #header,
-    #body,
-    #footer {
-        float: left;
-        padding: 0;
-        width: 94%;
-        margin: 3%;
+}
+
+@media only screen and (max-width: 481px) {
+    html, body {
+        width: 100%;
     }
-    #header {
-        height: 10%;
-    }
-    #footer {
-        display: none;
-    }
+
     #wordbox0010 {
         font-size: large;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
     }
 }
