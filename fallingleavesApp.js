@@ -169,6 +169,7 @@ app.controller('fallingleavesController', [
             /* Intro */
 
             intro: {
+                background: "/img/alphaBackground.jpeg",
                 currentIndex: 0,
                 lines: [
                     {
@@ -716,17 +717,8 @@ app.controller('fallingleavesController', [
                         text: "A pretty stone, but a stone nonetheless. What the hell are you supposed to do with this?"
                     },
                     {
-                        text: 'ANGEL: "This is a Trii stone. It will grant you powers of your choosing. Please bring it' +
-                        ' to the Chamber of Corlaat in the city of Behaal. The chaplain there will know what to do with it."'
-                    },
-                    {
-                        text: "...power of my choosing…?"
-                    },
-                    {
-                        text: "That's... so..."
-                    },
-                    {
-                        text: 'Cliche...'
+                        text: 'ANGEL: "Please bring this to the Chamber of Corlaat in the city of'
+                        + ' Behaal. The chaplain there will know what to do with it."'
                     },
                     {
                         text: 'ANGEL: "Please… do this… don’t… fail…"'
@@ -851,26 +843,11 @@ app.controller('fallingleavesController', [
                         text: "You remember what she said though"
                     },
                     {
-                        text: "About powers of your choosing."
+                        text: "How important it was to bring that rock to Behaal."
                     },
                     {
-                        text: "What does that even mean? Like, can you fly, or...?"
-                    },
-                    {
-                        text: "You roll out of bed and half-heartedly hop a little bit and see if you can hover or something."
-                    },
-                    {
-                        text: "You land on two feet."
-                    },
-                    {
-                        text: "Nope."
-                    },
-                    {
-                        text: "What other kind of power could she be talking about?"
-                    },
-                    {
-                        text: "Maybe you should go to the chapel she was talking about and speak with the chaplain "
-                        + "there. He might know more. You just need to get to Behaal City."
+                        text: "Maybe you should go to the chapel she was talking about. "
+                        + "You just need to get to Behaal City."
                     },
                     {
                         text: "That's about 2 hours North of here on the train. Better get some stuff together and get going.",
