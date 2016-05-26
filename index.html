@@ -31,11 +31,17 @@
             </div>
             -->
 
-
-
             <ng-include src="'views/menu.html'" onload="flCtrl = flCtrl"></ng-include>
 
-            <ng-include src="'views/header.html'" onload="flCtrl = flCtrl"></ng-include>
+            <div id="desktopHeader">
+                <ng-include src="'views/header.html'" onload="flCtrl = flCtrl"></ng-include>
+            </div>
+
+            <div id="mobileHeader">
+                <ng-include src="'views/mobileHeader'" onload="flCtrl = flCtrl"></ng-include>
+            </div>
+
+
             <div id="body">
                 <div id="title0010">
                     Falling Leaves ALPHA
