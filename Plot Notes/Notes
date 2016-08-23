@@ -41,6 +41,18 @@ Gods:
         Dwarves
         Gnomes
 
+Classes:
+
+    Playable:
+        Sword User
+        Bow User
+        Magic User
+
+     Non-Playable:
+        Gunman
+        Brawler
+        Celestial Archer
+        Demonic Warrior
 
 
 Weapons Types:

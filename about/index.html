@@ -13,12 +13,18 @@
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
 
         <!-- JavaScript App -->
-        <script src='../fallingleavesApp.js'></script>
+        <script type="text/javascript">
+            var app = angular.module("fallingleavesApp", []);
+        </script>
+        <script src="/js/services/flStory.js"></script>
+        <script src='/fallingleavesApp.js'></script>
+
+        <script src="/js/services/about.js"></script>
     </head>
 
     <body>
         <div id="container" ng-app="fallingleavesApp" ng-controller="fallingleavesController as flCtrl">
-            <ng-include src="'../views/header.html'" onload="flCtrl = flCtrl"></ng-include>
+            <ng-include src="'/views/header.html'" onload="flCtrl = flCtrl"></ng-include>
             <div class="main">
                 <div ng-repeat="line in flCtrl.aboutConfig.lines">
                     <br>
@@ -30,7 +36,7 @@
                 </div>
             </div>
             <div id="footer">
-                Copyright 2016 Baird Bros Game Studios
+                Copyright 2016 Rough Cut Studios
             </div>
 
         </div>

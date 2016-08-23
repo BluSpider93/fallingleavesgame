@@ -16,6 +16,11 @@
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
 
         <!-- JavaScript App -->
+        <script type="text/javascript">
+            var app = angular.module("fallingleavesApp", []);
+        </script>
+        <script src="js/services/flStory.js"></script>
+        <script src="js/services/about.js"></script>
         <script src='fallingleavesApp.js'></script>
 
         <title>Falling Leaves</title>
@@ -37,14 +42,14 @@
                 <ng-include src="'views/header.html'" onload="flCtrl = flCtrl"></ng-include>
             </div>
 
-            <div id="mobileHeader">
+            <!--<div id="mobileHeader">
                 <ng-include src="'views/mobileHeader'" onload="flCtrl = flCtrl"></ng-include>
-            </div>
+            </div> -->
 
 
             <div id="body">
                 <div id="title0010">
-                    Falling Leaves ALPHA
+                    Falling Leaves InDev
                 </div>
 
                 <div class="wordbox" ng-if="flCtrl.player.name == null">

@@ -2,17 +2,15 @@
  * Created by dustinbaird on 5/17/16.
  */
 
+app.factory('creatureFactory', [
+    function () {
 
-app.module('fallingleavesCreatures', [function () {
-    var _self = this;
+        var _self = this;
 
     _self.playableCharacters = [
         {
             name: 'Player'
 
-        },
-        {
-            name: 'Clara'
         }
     ];
 

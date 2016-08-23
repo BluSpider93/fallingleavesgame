@@ -7,7 +7,7 @@
 <div class="clearfix"></div>
 <div ng-if="flCtrl.story.lines[flCtrl.story.currentIndex].options">
     <div class="buttonSetting" ng-repeat="option in flCtrl.story.lines[flCtrl.story.currentIndex].options">
-        <div class="choiceButton" ng-click="flCtrl.changeBranch(flCtrl.main[option.value])">
+        <div class="choiceButton" ng-click="flCtrl.changeBranch(flCtrl.factory.main[option.value])">
             {{option.text}}
         </div>
     </div>
@@ -21,6 +21,10 @@
     </div>
 </div>
 <br>
-<div class="navButtons" ng-if="flCtrl.story == flCtrl.main.intro && !flCtrl.story.lines[flCtrl.story.currentIndex].options">
-    <button class="button" id="introSkip" ng-click="flCtrl.story = flCtrl.main.i01">Skip Intro</button>
+<div class="navButtons" ng-if="flCtrl.story == flCtrl.factory.main.intro && !flCtrl.story.lines[flCtrl.story.currentIndex].options">
+    <button class="button" id="introSkip" ng-click="flCtrl.story = flCtrl.factory.main.i01">Skip Intro</button>
+</div>
+
+<div>
+    <button class="button" ng-click="flCtrl.stop(flCtrl)"></button>
 </div>
