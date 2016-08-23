@@ -161,10 +161,7 @@ app.factory('leafStoryFactory', function() {
                             {
                                 value: 'i01',
                                 text: 'Finally',
-                                sentiment: 0,
-                                stop: function(flCtrl) {
-                                    
-                                }
+                                sentiment: 0
                             }
                         ]
                     }

@@ -119,11 +119,6 @@ app.controller(
             return newStory;
         };
 
-        _self.stop = function(flCtrl) {
-            debugger;
-        };
-
-
         /*_self.story = _self.main.test; */
         _self.story = leafStoryFactory.main.intro;
 
